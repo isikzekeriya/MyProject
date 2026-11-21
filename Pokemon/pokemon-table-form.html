@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Proje</title>
+</head>
+<body>
+    <img src="images/pokemon.svg-1.webp" alt="Pokemon Resmi" width="400">
+
+    <h1>Eğitmen Yönetim Paneli v2.0</h1>
+    <hr size="4" style="background-color: red; ">
+    <h2>1. Bölgesel Pokedex Veritabanı</h2>
+    <p>Aşağıdaki Tablo,rowspan ve colspan gibi gelişmiş tablo özelliklerini kullanmaktadır;</p>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Nesil</th>
+                <th>No</th>
+                <th>Pokemon</th>
+                <th>Tür Bilgisi</th>
+                <th>Temel İstatiksel(HP/Atk/Def)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Gen 1 (Kanto)</td>
+                <td>001</td>
+                <td><strong>Bulbasar</strong></td>
+                <td style="background-color: green;">Ot/Zehir</td>
+                <td style="text-align: center;">45 / 49 / 49</td>
+            </tr>
+            <tr>
+                <td rowspan="1">004</td>
+                <td><strong>Charmender</strong></td>
+                <td style="background-color: rgb(206, 115, 50);">Ateş</td>
+                <td style="text-align: center;">39 / 53 / 43</td>
+            </tr>
+            <tr>
+                <td rowspan="1">007</td>
+                <td><strong>Squirtle</strong></td>
+                <td style="background-color: rgb(88, 88, 208);">Su</td>
+                <td style="text-align: center;"> 44 / 48 / 65</td> 
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5" style="text-align: center; background-color: gold;">Not: Yukaridaki veriler resmi pokemon api'sinden alınmıştır</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>2. Gelişmiş Eğitmen Kayıt Formu</h2>
+
+    <form action="#">
+        <p>Bu Form HTML5'in sunduğu özel giriş tiplerini (range,color,file vb.) Kullanılır;</p>
+        <h4>Kimlik Kart Bilgileri</h4>
+        <label for="Name">Eğitmen Adı :</label>
+        <input type="text"  id="Name">
+        <label for="şifre">Parola :</label>
+        <input type="password"  id="şifre">
+        <br>
+        <br>
+        <label for="mail">E-posta :</label>
+        <input type="email" id="mail">
+        <label for="no">Telefon : </label>
+        <input type="tel" id="no">
+        <br>
+        <br>
+        <h4>Teknik Terchiler</h4>
+        <label for="">Başlangıç Zorluğu Kolay :</label>
+        <input type="range"  id=""> Zor  
+        <br>
+        <br>
+        <label for="">Sırt Çantası Rengi :</label>
+        <input type="color"  id="">  
+        <br>
+        <br>
+        <label for="">Profil Fotograf Yükle</label>  
+        <input type="file"  id=""> 
+        <br>
+        <br>
+        <h4>Deneyim Ve Rozetler</h4>
+        <label for="">Daha Önce bir lig Kazandınız mı ?</label>
+        <br>
+        <input type="radio"  id=""> Evet
+        <input type="radio"  id=""> Hayır
+        <br>
+        <br>
+        <label>Uzmanlaşmak istediğiniz alanlar.</label>
+        <br>
+        <input type="checkbox" id=""> Savaş
+        <input type="checkbox" id=""> Yaratıcılık
+        <input type="checkbox" id=""> Takas
+        <br>
+        <br>
+        <button type="reset">Verileri Sıfırla</button>
+        <button type="submit">Kayıt Ol ve Maceraya Başlat</button>
+        <br>
+        <br>
+        <hr size="5" style="background-color: rgb(65, 65, 207);">
+
+        <p style="text-align: center;">Bu Sayfa Sadece HTML Kullanılarak Biraz' Da Css Kullanarak Yardımı Olmuştur</p>
+
+
+    </form>
+</body>
+</html>
